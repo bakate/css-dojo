@@ -12,7 +12,9 @@ Select the alert class and a pseudo-class to display only elements that have con
 
 
 
-
+:not(.alert > p) p:first-child {
+    font-size: 2rem;
+}
 /*
 Select the first paragraph and set its font-size to 2rem and make the text italic
  */

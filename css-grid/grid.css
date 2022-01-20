@@ -2,13 +2,20 @@
 
 /* select the container class and set the display property to grid*/
 
-
+.container {
+    display:grid;
+    grid-template-areas:   " header header header"
+                           "sidebar1 content sidebar2"
+                           "footer  footer footer";
+    gap:10px;
+}
 
 /*second part */
 
 
 /*select the container class and set the display property to grid
 you should use the grid-template-areas property to set the grid areas
+
 
 we want the following grid areas:
 the "item0" should be the header and take the whole first row
@@ -20,6 +27,27 @@ the "item4" should be the footer and take the whole last row
 
 
 
+.item0 {
+    grid-area: header;
+}
+
+.item1{
+    grid-area: sidebar1;
+}
+.item2{
+    grid-area: content;
+}
+.item3{
+    grid-area: sidebar2;
+}
+.footer{
+    grid-area: footer;
+}
+
+.item {
+
+}
+
 /*select the item class and set :
  display flexbox and center the box axis
  set the background color by using the yellow variable
@@ -27,6 +55,16 @@ the "item4" should be the footer and take the whole last row
  set the font size to 35px;
  set the border to solid with 5 pixels and the color to rgba(0,0,0,0.05)
  */
+
+.item {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--yellow);
+    border-radius:8px;
+    font-size:35px;
+    border:solid 5px rgba(0,0,0,0.05);
+}
 
 
 /*make the display responsive with a max width under 700px
