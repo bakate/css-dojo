@@ -5,45 +5,95 @@
 - Buttons should be spaced evenly in the middle of the screen
 */
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    white-space: break-spaces;
+    animation-delay: initial;
+    all-space-treatment: initial;
+    font-palette: normal;
+    marquee-speed: normal;
+}
 
 
-/*each button should :
+
+/*each button should have:
+ - a width of 100px
  - transparent color
- - have a padding of 12 pixels for the Y axis and 24 pixels for the X axis
- - have no border
- - have a font-size of 2rem;
- - have a border radius of 6 pixels
- - have a box shadow of 4 pixels 4 pixels 8 pixels and #111
- set a local variable for the lightness and set it 62 percent
- - set a local variable for the hue and set it to 190
-- set the background color to hsl(hue, 89%, lightness)
-- set the text color #fafafa
-- set the transition to the box shadow/background-color to 0.3s ease
-
-
+ - a padding of 12 pixels for the Y axis and 24 pixels for the X axis
+ - no border
+ - a font-size of 2rem;
+ - a margin of 10px for the Y axis and 0 for the X axis
+ - a border-radius by using the variable radius
+ - a box shadow of 4 pixels 4 pixels 8 pixels and #111
+ - set a local variable for the lightness and set it 62 percent
+ - set a local variable for the hue and set it to 210
+ - set the background color to hsl(hue, 89%, lightness)
+ - set the text color #fafafa;
+ - set the transition to the box shadow/background-color to 0.3s ease
 
  */
+.button {
+    --lightness: 62%;
+    --hue: 210;
+    --black: #111;
+    background-color: hsl(var(--hue), 89%, var(--lightness));
+    color: #fafafa;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 12px 24px;
+    border: none;
+    font-size: 2rem;
+    margin: 10px 0;
+    border-radius: var(--radius);
+    box-shadow: 4px 4px 8px var(--black);
+    width: 160px;
+}
 
 /*
 when we hover a button set:
- - the box shadow to 3px 3px 6px #111
+ - the box shadow to 3px 3px 6px "black" variable
  - the lightness variable should be updated: less than 20 points
 */
+.button:hover {
+    box-shadow: 3px 3px 6px var(--black);
+    --lightness: 40%;
+    cursor: pointer;
+}
 
 /*
 when the button is active, set:
-- the box shadow to: 0 0 0 #111
+- the box shadow to: 0 0 0 black variable
 - the lightness variable should be downgraded: minus 2à points compared to hover state
 
 */
-
-/*select the button-primary class and change a variable locally */
-
-
-/*select the button-success class and change a variable locally */
-
-
-/*select the button-warning class and change a variable locally */
+.button:active {
+    box-shadow: 0 0 0 var(--black);
+    --lightness: 58%;
+}
 
 
-/*select the button-danger class and change a variable locally */
+
+/*select the button-success class and set the hue variable to 120 */
+.button-success {
+    --hue: 120;
+}
+
+
+/*select the button-warning class and set the hue variable 45 */
+.button-warning {
+    --hue: 45;
+}
+
+
+/*select the button-danger class and set the hue variable 10 */
+.button-danger {
+    --hue: 10;
+}
+
+ /*
+ Awesome!! We have created a button component with its different states and variants thanks to
+  CSS variables and the hsl color function.
+  */

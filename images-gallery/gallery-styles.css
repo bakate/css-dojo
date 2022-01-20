@@ -7,8 +7,14 @@ display the albums in a grid
 the grid template columns should be responsive and each column should be equal to 300px
 set a gutter of 20px between each column and row
 */
+.albums {
+  display: grid;
 
-
+    /*that's all we need to have something perfectly responsive. If there is not enough space, */
+    /*the browser will automatically wrap the albums in a new row.*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
 /*
 select the album class and add the following styles:
   background: rgba(255, 255, 255, 0.2);
@@ -16,9 +22,22 @@ select the album class and add the following styles:
   padding of 20px;
   gutter of 10px;
   font-weight: 500;
-  color: #fff;
+  color: #fff;*/
+.album {
+  display: grid;
+    grid-template-columns: 150px 1fr;
+  align-items: center;
+  padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    gap:10px;
+    font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
-  find a way to display it properly
-
+ /*
+ let the image take the whole width of the first column
 */
+img.album__artwork {
+  width: 100%;
+}
 

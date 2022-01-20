@@ -2,51 +2,30 @@
 
 /* select the container class and set the display property to grid*/
 
-.container {
-    display:grid;
-    grid-template-areas:   " header header header"
-                           "sidebar1 content sidebar2"
-                           "footer  footer footer";
-    gap:10px;
-}
 
-/*second part */
 
 
 /*select the container class and set the display property to grid
-you should use the grid-template-areas property to set the grid areas
+you should use the grid-template-areas property to set the grid areas*/
 
+.container {
+    display:grid;
+    /*this is one of the powerful features of the grid system
+    - You can the number of columns and rows by using variables
+    - Here you can name them however you want */
+    grid-template-areas:   "header   header   header"
+                           "sidebar1 content  sidebar2"
+                           "footer   footer   footer";
 
-we want the following grid areas:
-the "item0" should be the header and take the whole first row
-the "item1" should be the sidebar-1 content and take 1 available space out of 5
-the "item2" should be the content content and take 3 available space out of 5
-the "item3" should be the sidebar-2 content and take 1 available space out of 5
-the "item4" should be the footer and take the whole last row
-*/
+    /* or if you want :
+    grid-template-areas:     "😃   😃   😃"*/
+    /*                       "😠   😍   😭"*/
+    /*                       "💩   💩   💩";*/
+    /* you just need to make your classes match the grid areas */
 
-
-
-.item0 {
-    grid-area: header;
+    gap:10px;
 }
 
-.item1{
-    grid-area: sidebar1;
-}
-.item2{
-    grid-area: content;
-}
-.item3{
-    grid-area: sidebar2;
-}
-.footer{
-    grid-area: footer;
-}
-
-.item {
-
-}
 
 /*select the item class and set :
  display flexbox and center the box axis
@@ -61,13 +40,70 @@ the "item4" should be the footer and take the whole last row
     justify-content:center;
     align-items:center;
     background-color:var(--yellow);
-    border-radius:8px;
+    border-radius:var(--radius);
     font-size:35px;
     border:solid 5px rgba(0,0,0,0.05);
 }
 
 
+
+
+
+/*we want the following grid areas:
+the "item0" should be the header and take the whole first row*/
+.header {
+    grid-area: header;
+}
+/*the "item1" should be the sidebar-1 content and take 1 available space out of 5*/
+.sidebar1 {
+    grid-area: sidebar1;
+}
+
+/*the "item2" should be the content content and take 3 available space out of 5*/
+.main {
+    grid-area: content;
+}
+/*the "item3" should be the sidebar-2 content and take 1 available space out of 5*/
+.sidebar2 {
+    grid-area: sidebar2;
+}
+/*the "item4" should be the footer and take the whole last row
+*/
+.footer{
+    grid-area: footer;
+}
+
+
+
+
 /*make the display responsive with a max width under 700px
-remove the "item0" and the "item-2" classes
+remove the "item1" and the "item2" classes
 */
 
+@media screen and (max-width: 700px) {
+    .container {
+        grid-template-areas:   "header"
+                               "content"
+                                "sidebar2"
+                                "footer";
+
+    }
+    .item1 {
+       display:none;
+}
+
+}
+
+/*this is really awesome 😃 keep on playing with the grid-template-areas property*/
+/*Imagine we want the header to start at the second column and the first sidebar to expand until the last row ? */
+/*All you have to do is add the following grid-template-areas property:*/
+
+/*.container {*/
+/*    display:grid;*/
+/*for the header, you just need to put a comma if you want it empty*/
+/*    grid-template-areas:   " .       header   header"*/
+/*                           "sidebar1 content  sidebar2"*/
+/*                           "sidebar1 footer   footer";*/
+/*    */
+/*    gap:10px;*/
+/*}*/
