@@ -1,0 +1,50 @@
+
+
+/*select the cards class and set it with :
+max width of 750px;
+center it by using margin property;
+display it in a flexbox;
+*/
+
+/*select the card class and set it with :
+     background: rgba(255, 255, 255, 0.2);
+       flex to 1;
+ margin and padding to 20px;
+ border radius by using the variable
+ find a way to display it properly
+
+ */
+
+
+/*remove the default style from the ul and set margin and padding to 0*/
+
+/*each li should have a default border-bottom by using the variable*/
+
+/*the last li element should not have a border-bottom*/
+
+/*every anchor element should have :
+no text-decoration
+padding of 10px
+text color of black
+border-radius by using the variable
+background color of yellow by suing the variable
+
+ */
+
+/*each h2 element should be
+uppercase
+white color by using the variable
+letter spacing  by using the variable
+text-shadow by using the variable
+*/
+
+/*select the price lass and set it with :
+font-size of 60px;
+margin: Y axis to 14 pixels X axis to 0;
+find a way to push it at the bottom
+*/
+
+/*select the cta class
+and set it at the end of the card
+*/
+

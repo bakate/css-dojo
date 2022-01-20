@@ -1,0 +1,45 @@
+/*We will use pseudo-classes to style our elements 😀.*/
+
+/*
+Select the alert class and a pseudo-class to display only elements that have contents :
+1°) border with 3 pixels lightgreen and solid
+2°) background color: seagreen
+3°) white color text
+4°) border radius of 5px
+5°) a margin of 1rem
+6°) a padding of 1rem
+ */
+
+
+
+
+/*
+Select the first paragraph and set its font-size to 2rem and make the text italic
+ */
+
+
+/*
+Select the last paragraph and set its color to maroon
+*/
+
+
+
+/*
+Select every "even" paragraph and set its font-size to 1.5rem and text color white
+ */
+
+
+
+/*
+Select the solely blockquote and set :
+1°) border left with 5px solid slategray;
+2°) padding left with 1rem;
+3°) font weight to bold;
+4°) font style to italic;
+5°) color to darkgray;
+ */
+
+
+/*
+select the first image and set its border to 10px solid red
+ */

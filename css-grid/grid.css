@@ -1,0 +1,35 @@
+/*let's meet the css grid system */
+
+/* select the container class and set the display property to grid*/
+
+
+
+/*second part */
+
+
+/*select the container class and set the display property to grid
+you should use the grid-template-areas property to set the grid areas
+
+we want the following grid areas:
+the "item0" should be the header and take the whole first row
+the "item1" should be the sidebar-1 content and take 1 available space out of 5
+the "item2" should be the content content and take 3 available space out of 5
+the "item3" should be the sidebar-2 content and take 1 available space out of 5
+the "item4" should be the footer and take the whole last row
+*/
+
+
+
+/*select the item class and set :
+ display flexbox and center the box axis
+ set the background color by using the yellow variable
+ set the border radius by using the border-radius variable
+ set the font size to 35px;
+ set the border to solid with 5 pixels and the color to rgba(0,0,0,0.05)
+ */
+
+
+/*make the display responsive with a max width under 700px
+remove the "item0" and the "item-2" classes
+*/
+

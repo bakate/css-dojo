@@ -1,0 +1,49 @@
+
+/*
+- select the buttons class to center perfectly in the middle of the screen
+- Buttons should be stacked vertically
+- Buttons should be spaced evenly in the middle of the screen
+*/
+
+
+
+/*each button should :
+ - transparent color
+ - have a padding of 12 pixels for the Y axis and 24 pixels for the X axis
+ - have no border
+ - have a font-size of 2rem;
+ - have a border radius of 6 pixels
+ - have a box shadow of 4 pixels 4 pixels 8 pixels and #111
+ set a local variable for the lightness and set it 62 percent
+ - set a local variable for the hue and set it to 190
+- set the background color to hsl(hue, 89%, lightness)
+- set the text color #fafafa
+- set the transition to the box shadow/background-color to 0.3s ease
+
+
+
+ */
+
+/*
+when we hover a button set:
+ - the box shadow to 3px 3px 6px #111
+ - the lightness variable should be updated: less than 20 points
+*/
+
+/*
+when the button is active, set:
+- the box shadow to: 0 0 0 #111
+- the lightness variable should be downgraded: minus 2à points compared to hover state
+
+*/
+
+/*select the button-primary class and change a variable locally */
+
+
+/*select the button-success class and change a variable locally */
+
+
+/*select the button-warning class and change a variable locally */
+
+
+/*select the button-danger class and change a variable locally */
