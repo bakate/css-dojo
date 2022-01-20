@@ -9,25 +9,41 @@ Select the alert class and a pseudo-class to display only elements that have con
 5°) a margin of 1rem
 6°) a padding of 1rem
  */
-
-
+.alert:not(:empty) {
+    border: 3px solid lightgreen;
+    background-color: seagreen;
+    color: white;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+}
 
 
 /*
-Select the first paragraph and set its font-size to 2rem and make the text italic
+Select the first paragraph and set its font-size to 3rem and make the text italic
  */
+.article p:first-of-type {
+    font-size: 2rem;
+    font-style: italic;
+}
 
 
 /*
 Select the last paragraph and set its color to maroon
 */
+.article p:last-of-type {
+    color: maroon;
+}
 
 
 
 /*
-Select every "even" paragraph and set its font-size to 1.5rem and text color white
+Select every "even" paragraph and set its font-size to 1.5rem and text color  cornflowerblue
  */
-
+ p:nth-of-type(even) {
+     font-size: 1.5rem;
+     color: cornflowerblue;
+ }
 
 
 /*
@@ -38,8 +54,17 @@ Select the solely blockquote and set :
 4°) font style to italic;
 5°) color to darkgray;
  */
-
+blockquote:only-of-type {
+    border-left: 5px solid slategray;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    color: darkgray;
+}
 
 /*
 select the first image and set its border to 10px solid red
  */
+img:first-of-type {
+    border: 10px solid red;
+}

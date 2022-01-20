@@ -11,14 +11,18 @@ set a gutter of 20px between each column and row
 
 /*
 select the album class and add the following styles:
-  background: rgba(255, 255, 255, 0.2);
+ display the album in a grid
+ create 2 columns for the album : set the first to 150px and the second should take the remaining space
+  set the background color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   padding of 20px;
   gutter of 10px;
   font-weight: 500;
-  color: #fff;
+  color: #fff;*/
 
-  find a way to display it properly
 
+ /*
+ let the image take the whole width of the first column
 */
+
 

@@ -2,37 +2,72 @@
                                 /*This is a warmup exercise.*/
 
 /*
-==> center the title
+center the h1 element
 */
-
-
-
-
+h1 {
+  text-align: center;
+}
 
 /*
-==> select the container class and use flexbox to display the elements
-1°) in a row;
-2°) in a column;
-and they should be centered
+select the container class and use flexbox to display the elements
+1°) in a row to see that there is no effect since it's the default value;
+2°) then display it in a column;
+3°) its children should be centered
 */
 
-
-
+.container {
+    display: flex;
+    /*flex-direction: row;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*
-==> center the content of each item
+ center the content of each item
 Additional info: each item should have:
-1°) a font-size of 1.5em;
+1°) a font-size of 1.5rem;
 2°) a border-radius of 8 pixels;
 3°) a yellow background;
+4°) text should be centered;
 */
+.item {
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: yellow;
+}
+/*
+Okay,
+1°) select the lonely class
+2°) center the div element and its first child by using only the margin property
+4°) the container should have a width of 600px;
+5°) the container should have a height of 150px;
+6°) the container should have an ugly background-color:  #61e846
+7°) the container should overflow should be hidden;
 
 
-/*Okay,
-1°) delete everything from the .html file  except the container and its first child
-2°) delete everything from the .css file except the item class rule
-3°) center the container and its first child without using Flexbox/Grid
-4°) the container should have a width of 60vw;
-5°) the container should have a height of 30vh;
  */
+.lonely {
+    background-color: #61e846;
+    margin: 0 auto;
+    width: 600px;
+    height: 150px;
+    overflow: hidden;
+}
 
+/*
+let's also center the paragraph also thanks to the margin property
+1°) select the paragraph element
+2°) its font-size should be 20px;
+3°) its text-align should be center;
+4°) perform some calculations to set the margin to center perfectly the pargraph
+
+*/
+.lonely p {
+    font-size: 20px;
+    text-align: center;
+ /*we calculate the margin top and bottom by removing the font-size from the height of the container*/
+    margin: calc(130px / 2) auto;
+
+}
 

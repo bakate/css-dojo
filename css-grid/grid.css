@@ -1,21 +1,18 @@
 /*let's meet the css grid system */
 
-/* select the container class and set the display property to grid*/
+/*
+1°) select the container class and set the display property to grid
+2°) create a grid with 3 columns
+3°) after a call with Bruno, we finally want 4 columns
+*/
 
 
+/*This is the second part of the exercise.*/
 
-/*second part */
-
-
-/*select the container class and set the display property to grid
-you should use the grid-template-areas property to set the grid areas
-
-we want the following grid areas:
-the "item0" should be the header and take the whole first row
-the "item1" should be the sidebar-1 content and take 1 available space out of 5
-the "item2" should be the content content and take 3 available space out of 5
-the "item3" should be the sidebar-2 content and take 1 available space out of 5
-the "item4" should be the footer and take the whole last row
+/*
+1°) select the container class and set the display property to grid
+2°) create a grid with 3 columns by using the grid-templates-areas property
+3°) set a gap between the items of 10px
 */
 
 
@@ -29,7 +26,44 @@ the "item4" should be the footer and take the whole last row
  */
 
 
-/*make the display responsive with a max width under 700px
-remove the "item0" and the "item-2" classes
+
+
+
+/*we want the following grid areas:
+the "header" class should be the header and take the entire first row*/
+
+
+/*the "sidebar1" class should represent the sidebar-1 content area*/
+
+
+/*the "main" class should represent the content area*/
+
+
+/*the "sidebar2" class should represent the sidebar-2 area*/
+
+
+/*the "footer" class should represent the footer area
 */
+
+
+
+
+
+/*
+1°) make the display responsive with a max width screen under 700px:
+    - display everything within a single column
+    - the header should be the first row
+    - the content should be the second row
+    - the sidebar1 should be the third row
+    - the footer should be the fourth row
+*/
+
+
+/*remove the "sidebar1" classes*/
+
+
+/*this is really awesome 😃 keep on playing with the grid-template-areas property*/
+/*Imagine Bruno wants the header to start at the second column and the first sidebar to expand until the last row ? */
+
+
 
